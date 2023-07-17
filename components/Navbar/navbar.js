@@ -31,7 +31,8 @@ const NavBar = () => {
     return (
         <motion.div variants={variants} initial="collapsed" animate={hover ? "expanded" : "collapsed"} className="navbar">
             <div className="navbar-box inline-flex items-center">
-                <p onClick={() => {router.push('/')}}>Home</p>
+                <p onClick={() => {router.push('/')
+             setHover(false)}}>Home</p>
                 <p>{!hover ? <IoIosArrowDown onClick={() => setHover(!hover)} className='inline ml-2' /> : <IoIosArrowUp onClick={() => setHover(!hover)} className='inline ml-2' />}</p>
             </div>
             <Link href="https://tanaydesai.vercel.app/"><p className="navbar-box">Tanay Desai →</p></Link>
@@ -43,7 +44,7 @@ const NavBar = () => {
                         setHover(false)
                     }} className="navbar-box w-full my-0.5">{item}</p>
                 ))}
-               <Link href="https://github.com/tanaydesai/"><p className="navbar-box w-full mt-5 flex items-center gap-1"><AiFillGithub className="inline" /> GitHub</p></Link>
+               <Link href="https://github.com/tanaydesai/uiaftersex"><p className="navbar-box w-full mt-5 flex items-center gap-1"><AiFillGithub className="inline" /> GitHub</p></Link>
                <Link href="https://twitter.com/tanaydesaii"><p className="navbar-box w-full my-0.5 flex items-center gap-1"><AiOutlineTwitter className="inline" /> Twitter</p></Link>
              </motion.div>}   
         </motion.div>

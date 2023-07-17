@@ -18,7 +18,7 @@ const Home = () => {
 
                 <h1 className="content-subheader">Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/TanayDesai/uiaftersex/tree/main/components/peek' className="text-black">here</a>. This was made with:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Card' className="text-black link">here</a>. This was made with:</p>
                     <li><code >React + Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >Tailwind CSS</code></li>

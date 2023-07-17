@@ -39,7 +39,7 @@ const Home = () => {
 
                 <h1 className='content-subheader'>Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/TanayDesai/uiaftersex/tree/main/components/sitesearch' className="text-black link">here</a>. This was made with:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Cmdkbox' className="text-black link">here</a>. This was made with:</p>
                     <li><a href='https://cmdk.paco.me/' className="text-black link">cdmk box </a>by paco.</li>
                     <li><code>React + Next.js</code> for implementation.</li>
                     <p>Inspired by <a href='https://thebrowser.company/' className="text-black link"> thebrowsercompany</a>'s site search ❤️‍🩹</p>
