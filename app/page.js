@@ -34,7 +34,7 @@ export function Home() {
   })
 
   return (
-      <div className='p-5 md:p-10 w-full'>
+      <div className='p-5 md:p-10 overflow-x-hidden'>
 
         <div className='intro top-10' ref={mage.ref}>
             <Image src={rose} className='absolute m-auto -rotate-45' width={700} height={600}></Image>
@@ -44,7 +44,7 @@ export function Home() {
         <Parallax scale={[1.2,0.85 , 'easeInQuad']} className='w-full' >
           <motion.div initial={{opacity:0,transition:{duration:0.3}}}animate={{opacity:progress > 0.85 ? 1 : 0,transition:{duration:0.3}}} >
               <div className='intro w-full'>
-                  <h1 className='title-description flex-none'>an <a href='' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> intuitive laboratory that showcases uniquely crafted user interfaces & interactions that make you wanna (hopefully) come back to, after sex.❤️‍🩹<br/> <br/> <br/> -by Tanay Desai.</h1>      
+                  <h1 className='title-description'>an <a href='' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> intuitive laboratory that showcases uniquely crafted user interfaces & interactions that make you wanna (hopefully) come back to, after sex.❤️‍🩹<br/> <br/> <br/> -by Tanay Desai.</h1>      
               </div>
             </motion.div>
         </Parallax>

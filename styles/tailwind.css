@@ -1,12 +1,12 @@
 @layer components {
     body {
-        @apply [&::-webkit-scrollbar]:hidden overflow-x-hidden;
+        @apply [&::-webkit-scrollbar]:hidden overflow-x-hidden w-full;
     }
     .intro {
-        @apply p-5 h-screen w-[100%] md:w-[95%] flex flex-wrap justify-center items-center m-auto text-black rounded-[20px] bg-[#e8e1d9];
+        @apply p-5 h-screen w-full md:w-[95%] flex flex-wrap justify-center items-center m-auto text-black rounded-[20px] bg-[#e8e1d9];
     }
     .title-description {
-        @apply mx-5 z-10 max-w-[600px] text-center text-[14px] md:text-[16px] [font-family:"SupplyLRegular"] text-black;
+        @apply mx-5 z-10 max-w-[600px] text-center text-[12px] md:text-[16px] [font-family:"SupplyLRegular"] text-black;
     }
     .header {
         @apply text-[30px] w-full justify-center items-center [font-family:"Maglite"] flex;
