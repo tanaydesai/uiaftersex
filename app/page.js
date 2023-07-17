@@ -1,113 +1,71 @@
+"use client"
 import Image from 'next/image'
+import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link'
+import peek from "@/assests/images/peekdemo.png"
+import time from "@/assests/images/tmdemo.png"
+import cmdk from "@/assests/images/cdmkboxdemo.png"
+import card from "@/assests/images/carddemo.png"
+import { motion } from 'framer-motion'
+import { Fade } from "react-awesome-reveal";
+import { ParallaxProvider, useParallax, Parallax } from 'react-scroll-parallax';
+import uiaftersex from "@/assests/svgs/uiaftersex-white.svg"
+import rose from "@/assests/svgs/rose.svg"
+import {AiFillGithub} from "react-icons/ai"
 
-export default function Home() {
+const boxes = [
+  {Name:"Peek",Link:"/peek",Image:peek,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
+  {Name:"Timemachine",Link:"/timemachine",Image:time,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
+  {Name:"CmdkBox",Link:"/cmdkbox",Image:cmdk,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
+  {Name:"Card",Link:"/card",Image:card,Date:"22.03.23",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}
+]
+
+
+export default function Page() {
+  return <ParallaxProvider><Home /></ParallaxProvider>
+}
+
+export function Home() {
+  const [progress, setProgress] = useState(0)
+
+  const mage = useParallax({
+    scale: [0.9, 1.2, 'easeInQuad'],
+    onProgressChange:(num) => {setProgress(num)}
+  })
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className='p-5 md:p-10 w-full'>
+
+        <div className='intro top-10' ref={mage.ref}>
+            <Image src={rose} className='absolute m-auto -rotate-45' width={700} height={600}></Image>
+            <Fade  className='w-full h-auto'><Image className='w-full h-auto' src={uiaftersex} alt="Uiaftersex" /></Fade>
+        </div>
+
+        <Parallax scale={[1.2,0.85 , 'easeInQuad']} className='w-full' >
+          <motion.div initial={{opacity:0,transition:{duration:0.3}}}animate={{opacity:progress > 0.85 ? 1 : 0,transition:{duration:0.3}}} >
+              <div className='intro w-full'>
+                  <h1 className='title-description flex-none'>an <a href='' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> intuitive laboratory that showcases uniquely crafted user interfaces & interactions that make you wanna (hopefully) come back to, after sex.❤️‍🩹<br/> <br/> <br/> -by Tanay Desai.</h1>      
+              </div>
+            </motion.div>
+        </Parallax>
+
+        <svg>
+            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.153,0.007 L0.794,0 C0.794,0,0.979,0.005,0.981,0.1 C0.981,0.1,0.987,0.311,0.989,0.354 C0.991,0.394,0.985,0.667,0.983,0.716 C0.981,0.765,0.999,0.812,1,0.895 C1,0.895,1,1,0.771,0.996 C0.482,1,0.207,1,0.207,1 C0.207,1,0.016,0.987,0.024,0.892 C0.033,0.796,0.003,0.144,0.003,0.116 C0.003,0.088,-0.012,0.009,0.153,0.007"></path></clipPath>
+        </svg>
+        
+        <h1 className='header'>Components</h1>
+        <Fade><p className='header-description'>all pieces are <a href='' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> that aim to feel good, inspire to build more or just some "fuck-it why not"s.</p></Fade>
+
+        <div className='gridBox'>
+          {boxes.map(box => (
+              <div className='box'>
+                <div className='[filter:drop-shadow(0_16px_20px_rgba(0,0,0,0.1))]'><div style={{clipPath: "url(#my-clip-path)"}} className='blob'><motion.div whileHover={{scale:1.02,transition:{duration:0.3}}}><Image src={box.Image} className='blob-image'/></motion.div></div></div>
+                <h1 className='box-title'><Link href={box.Link} className='link'>{box.Name}</Link></h1>
+                <Fade><p className='box-description'>{box.Description}</p></Fade>
+                <p className='box-date'>{box.Date}</p>
+              </div>
+          ))}
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   )
 }

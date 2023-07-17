@@ -1,0 +1,62 @@
+@import "./tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "SupplyLMedium";
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('SupplyLMedium'),url("../assests/fonts/Supply-Regular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "SupplyLRegular";
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('SupplyLRegular'),url("../assests/fonts/Supply-Light.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "SupplyUltra";
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('SupplyUltra'),url("../assests/fonts/Supply-UltraLight.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Maglite';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Maglite'), url("../assests/fonts/Maglite.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'LufgaLight';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('LufgaLight'), url("../assests/fonts/LufgaLight.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Allenoire';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Allenoire'), url("../assests/fonts/Allenoire\ Font.otf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Calming';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Calming'), url("../assests/fonts/Calming.ttf") format('truetype');
+}
+

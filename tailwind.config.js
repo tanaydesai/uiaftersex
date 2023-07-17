@@ -6,11 +6,28 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      SupplyLMedium :["SupplyLMedium","Courier New"],
+      SupplyLRegular :["SupplyLRegular","Courier New"],
+      SupplyUltra :["SupplyUltra","Courier New"],
+      LufgaLight: ["LufgaLight","sans"],
+      Maglite: ["Maglite","sans"]
+    },
+    fontWeight: {
+      thin: '100',
+      hairline: '100',
+      extralight: '200',
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        swirl: `url(/textures/swirl.jpg)`,
+        wall: `url(/textures/wall.jpg)`,
+        whiteplaster: `url(/textures/whiteplaster.jpg)`,
+        roots: `url(/textures/roots.jpg)`,
+        dots: `url(/textures/dots.jpg)`,
+        paper: `url(/textures/paper.jpg)`,
+        dirt: `url(/textures/dirt.jpg)`,
+        grain: `url(/textures/grain.png)`
       },
     },
   },
