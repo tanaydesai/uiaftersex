@@ -6,18 +6,22 @@ import peek from "@/assests/images/peekdemo.png"
 import time from "@/assests/images/tmdemo.png"
 import cmdk from "@/assests/images/cdmkboxdemo.png"
 import card from "@/assests/images/carddemo.png"
+import quickie from "@/assests/images/quickiedemo.png"
+import sggallery from "@/assests/images/sgdemo.png"
+import uiaftersex from "@/assests/svgs/uiaftersex-white.svg"
+import rose from "@/assests/svgs/rose.svg"
 import { motion } from 'framer-motion'
 import { Fade } from "react-awesome-reveal";
 import { ParallaxProvider, useParallax, Parallax } from 'react-scroll-parallax';
-import uiaftersex from "@/assests/svgs/uiaftersex-white.svg"
-import rose from "@/assests/svgs/rose.svg"
 import {AiFillGithub} from "react-icons/ai"
 
 const boxes = [
-  {Name:"Peek",Link:"/peek",Image:peek,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
-  {Name:"Timemachine",Link:"/timemachine",Image:time,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
-  {Name:"CmdkBox",Link:"/cmdkbox",Image:cmdk,Date:"22.03.22",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}, 
-  {Name:"Card",Link:"/card",Image:card,Date:"22.03.23",Description:"khsi hsksh sk skh.ld pduo d doud d oud do sihs hsks ks ks hsks   shkhsk  skhsk ks skh"}
+  {Name:"Peek",Link:"/peek",Image:peek,Date:"23.05.23",Description:"A simple and accessible way to view a website from a link without the need to open it in a new tab."}, 
+  {Name:"Timemachine",Link:"/timemachine",Image:time,Date:"20.07.23",Description:"A quirky way to view your search history, TimeMachine allows you to smoothly switch between tabs & keep'em well organised."},
+  {Name:"Quickie",Link:"/quickie",Image:quickie,Date:"10.08.23",Description:"A boucy, fluid and quick component that acts as a sudo-navbar for links, socials, etc."}, 
+  {Name:"Spring Gallery",Link:"/springgallery",Image:sggallery,Date:"22.08.23",Description:"A sprigy and non-boring way to display images on your webstie."},
+  {Name:"CmdkBox",Link:"/cmdkbox",Image:cmdk,Date:"25.05.23",Description:"Cmdkbox combines a ⌘ + K box & Arc's site search feature into a quick & easy way to broswe the web."}, 
+  {Name:"Card",Link:"/card",Image:card,Date:"20.07.23",Description:"Uniquely crafted 3D preview cards for showcasing any type of content in a beautiful way."}
 ]
 
 
@@ -44,7 +48,7 @@ export function Home() {
         <Parallax scale={[1.2,0.85 , 'easeInQuad']} className='w-full' >
           <motion.div initial={{opacity:0,transition:{duration:0.3}}}animate={{opacity:progress > 0.85 ? 1 : 0,transition:{duration:0.3}}} >
               <div className='intro w-full'>
-                  <h1 className='title-description'>an <a href='https://github.com/tanaydesai/uiaftersex' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> intuitive laboratory that showcases uniquely crafted user interfaces & interactions that make you wanna (hopefully) come back to, after sex.❤️‍🩹<br/> <br/> <br/> -by Tanay Desai.</h1>      
+                  <h1 className='title-description'>an <a href='https://github.com/tanaydesai/uiaftersex' className='link w-fit inline-flex items-center gap-2'>open-source <AiFillGithub className='inline' /></a> intuitive laboratory that showcases uniquely crafted user interfaces, interactions & components that make you wanna (hopefully) come back to, after sex.❤️‍🩹<br/> <br/> <br/> -by Tanay Desai.</h1>      
               </div>
             </motion.div>
         </Parallax>
@@ -59,7 +63,7 @@ export function Home() {
         <div className='gridBox'>
           {boxes.map(box => (
               <div className='box'>
-                <div className='[filter:drop-shadow(0_16px_20px_rgba(0,0,0,0.1))]'><div style={{clipPath: "url(#my-clip-path)"}} className='blob'><motion.div whileHover={{scale:1.02,transition:{duration:0.3}}}><Image src={box.Image} className='blob-image'/></motion.div></div></div>
+                <div className='[filter:drop-shadow(0_16px_20px_rgba(0,0,0,0.1))]'><div style={{clipPath: "url(#my-clip-path)"}} className='blob'><motion.div whileHover={{scale:1.02,transition:{duration:0.3}}}><a href={box.Link}><Image src={box.Image} className='blob-image'/></a></motion.div></div></div>
                 <h1 className='box-title'><Link href={box.Link} className='link'>{box.Name}</Link></h1>
                 <Fade><p className='box-description'>{box.Description}</p></Fade>
                 <p className='box-date'>{box.Date}</p>

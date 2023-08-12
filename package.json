@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "@popmotion/popcorn": "^0.4.4",
     "autoprefixer": "10.4.14",
     "cmdk": "^0.2.0",
     "framer-motion": "^10.12.21",

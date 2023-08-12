@@ -25,7 +25,6 @@ const Home = () => {
             </div>
 
             <div className='content-blog'>
-
                 <h1 className="content-header">Cmdkbox</h1>
                 <div className="content-description">
                     <p>Cmdkbox combines a<code><ImCommand className='inline' size={15}/></code> + <code>K</code> box & Arc's site search feature into a quick & easy way to broswe the web.</p>
@@ -44,7 +43,6 @@ const Home = () => {
                     <li><code>React + Next.js</code> for implementation.</li>
                     <p>Inspired by <a href='https://thebrowser.company/' className="text-black link"> thebrowsercompany</a>'s site search ❤️‍🩹</p>
                 </div>
-
             </div>
         </div>
     )

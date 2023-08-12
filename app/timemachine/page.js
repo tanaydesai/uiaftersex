@@ -12,7 +12,6 @@ const Home = () => {
             <div className='content-box'><TimeMachine /></div>
             
             <div className="content-blog">
-                
                 <h1 className="content-header">TimeMachine</h1>
                 <div className="content-description">
                     <p>A quirky way to view your search history:) TimeMachine allows you to smoothly switch between tabs & keep'em well organised.</p>
@@ -35,7 +34,6 @@ const Home = () => {
                     <li><code>Electron.js</code> (for webview)</li>
                     <p>Inspired by the original Apple MacOs Time-machine:)</p>
                 </div>      
-
             </div> 
         </div>
 

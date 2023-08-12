@@ -1,7 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
 import CardExploreAI from '@/components/Card/card';
-import { motion } from 'framer-motion'
 
 const Home = () => {
     return (
@@ -9,12 +8,10 @@ const Home = () => {
             <div className='content-box bg-transparent shadow-none'><CardExploreAI /></div>
 
             <div className="content-blog">
-                
                 <h1 className="content-header">Card</h1>
                 <div className="content-description">
-                    <p>Uniquely crafted 3D preview cards for showcasing any type of content in a beautiful way</p>
+                    <p>Uniquely crafted 3D preview cards for showcasing any type of content in a beautiful way.</p>
                 </div>
-
 
                 <h1 className="content-subheader">Code</h1>
                 <div className="content-description">
@@ -23,7 +20,6 @@ const Home = () => {
                     <li><code >framer-motion</code></li>
                     <li><code >Tailwind CSS</code></li>
                 </div>      
-
             </div>
         </div>
     )
