@@ -13,27 +13,34 @@ const NavBar = () => {
 
     const variants = {
         expanded:{
-            height:"150px",
+            height:[40,40,100,150,180,150],
             width:"350px",
             transition:{
-                duration:0.25
+                duration:0.4,
+                type:"spring",
+                stiffness:120,
+                // duration:0.4
             }
         },
         collapsed:{
-            width:"300px",
+            width:"250px",
             height:"40px",
             transition:{
-                duration:0.25
+                duration:0.4,
+                type:"spring",
+                stiffness:100,
+                damping:14,
             }
         }
     }
 
+
     return (
         <motion.div variants={variants} initial="collapsed" animate={hover ? "expanded" : "collapsed"} className="navbar">
-            <div className="navbar-box inline-flex items-center">
-                <p onClick={() => {router.push('/')
-             setHover(false)}}>Home</p>
-                <p>{!hover ? <IoIosArrowDown onClick={() => setHover(!hover)} className='inline ml-2' /> : <IoIosArrowUp onClick={() => setHover(!hover)} className='inline ml-2' />}</p>
+            <div className="navbar-box gap-1 p-0 hover:opacity-100 hover:bg-[#F7F7F2]/[.60] inline-flex items-center">
+                <p className="navbar-box" onClick={() => {router.push('/')
+                    setHover(false)}}>Home</p>
+                <motion.p className="navbar-box w-fit pl-0">{!hover ? <IoIosArrowDown onClick={() => setHover(!hover)} className='inline ml-2' /> : <IoIosArrowUp onClick={() => setHover(!hover)} className='inline ml-2' />}</motion.p>
             </div>
             <Link href="https://tanaydesai.vercel.app/"><p className="navbar-box">Tanay Desai →</p></Link>
             {hover && 
