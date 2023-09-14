@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
-        <hr className='divder'></hr>
-        <Footer />
+        {/* <hr className='divder'></hr> */}
+        {/* <Footer /> */}
       </body>
     </html>
   )
