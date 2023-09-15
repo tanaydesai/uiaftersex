@@ -124,8 +124,8 @@ export default function Cmdkbox() {
         </Command.Group>
         
         <Command.Group heading="Social">
-          <Item shortcut="⇧ D"><TwitterIcon /><a href='https://twitter.com/tanaydesaii' style={{margin:"0"}}>@tanaydesaii</a></Item>
-          <Item><GitHubIcon /><a href='https://github.com/TanayDesai' style={{margin:"0"}}>@TanayDesai</a></Item>
+          <Item shortcut="⇧ S" onSelect={() => {window.open("https://twitter.com/tanaydesaii", '_blank')}}><TwitterIcon /><a href='https://twitter.com/tanaydesaii' style={{margin:"0"}}>@tanaydesaii</a></Item>
+          <Item shortcut="⇧ S" onSelect={() => {window.open("https://github.com/tanaydesai", '_blank')}}><GitHubIcon /><a href='https://github.com/tanaydesai' style={{margin:"0"}}>@tanaydesai</a></Item>
         </Command.Group>
       </>
     )
