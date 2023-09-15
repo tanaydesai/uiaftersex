@@ -1,11 +1,11 @@
 "use client"
-import Spring from "@/components/SpringGallery/spring"
+import Spring from "@/components/Springy/spring"
 
 const Home = () => {
 
     return(
         <div className="content">
-            <div className="content-box"><Spring /></div>
+            <div className="content-box flex justify-center items-center"><Spring /></div>
 
             <div className="content-blog">
                 <h1 className="content-header">Spring Gallery</h1>

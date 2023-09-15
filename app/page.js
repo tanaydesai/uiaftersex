@@ -8,6 +8,7 @@ import cmdk from "@/assests/images/cdmkboxdemo.png"
 import card from "@/assests/images/carddemo.png"
 import quickie from "@/assests/images/quickiedemo.png"
 import sggallery from "@/assests/images/sgdemo.png"
+import buttons from "@/assests/images/buttonsdemo.png"
 import uiaftersex from "@/assests/svgs/uiaftersex-white.svg"
 import rose from "@/assests/svgs/rose.svg"
 import { motion } from 'framer-motion'
@@ -19,7 +20,8 @@ const boxes = [
   {Name:"Peek",Link:"/peek",Image:peek,Date:"23.05.23",Description:"A simple and accessible way to view a website from a link without the need to open it in a new tab."}, 
   {Name:"Timemachine",Link:"/timemachine",Image:time,Date:"20.07.23",Description:"A quirky way to view your search history, TimeMachine allows you to smoothly switch between tabs & keep'em well organised."},
   {Name:"Quickie",Link:"/quickie",Image:quickie,Date:"10.08.23",Description:"A boucy, fluid and quick component that acts as a sudo-navbar for links, socials, etc."}, 
-  {Name:"Spring Gallery",Link:"/springgallery",Image:sggallery,Date:"22.08.23",Description:"A sprigy and non-boring way to display images on your webstie."},
+  {Name:"Buttons",Link:"/buttons",Image:buttons,Date:"11.09.23",Description:"A collection of beautifully desgined buttons with fluid interactions and svg animations."},
+  {Name:"Springy",Link:"/springy",Image:sggallery,Date:"22.08.23",Description:"A sprigy and non-boring way to display images on your webstie."},
   {Name:"CmdkBox",Link:"/cmdkbox",Image:cmdk,Date:"25.05.23",Description:"Cmdkbox combines a ⌘ + K box & Arc's site search feature into a quick & easy way to broswe the web."}, 
   {Name:"Card",Link:"/card",Image:card,Date:"20.07.23",Description:"Uniquely crafted 3D preview cards for showcasing any type of content in a beautiful way."}
 ]
@@ -63,7 +65,7 @@ export function Home() {
         <div className='gridBox'>
           {boxes.map(box => (
               <div className='box'>
-                <div className='[filter:drop-shadow(0_16px_20px_rgba(0,0,0,0.1))]'><div style={{clipPath: "url(#my-clip-path)"}} className='blob'><motion.div whileHover={{scale:1.02,transition:{duration:0.3}}}><a href={box.Link}><Image src={box.Image} className='blob-image'/></a></motion.div></div></div>
+                <div className='[filter:drop-shadow(0_16px_20px_rgba(0,0,0,0.1))]'><div className='blob'><motion.div whileHover={{scale:1.02,transition:{duration:0.3}}}><a href={box.Link}><Image src={box.Image} className='blob-image'/></a></motion.div></div></div>
                 <h1 className='box-title'><Link href={box.Link} className='link'>{box.Name}</Link></h1>
                 <Fade><p className='box-description'>{box.Description}</p></Fade>
                 <p className='box-date'>{box.Date}</p>

@@ -3,8 +3,7 @@ import React, { useState,useRef } from "react";
 import { motion,useMotionValue,useSpring,useTransform, } from "framer-motion";
 import { distance } from "@popmotion/popcorn";
 import Image from "next/image";
-import { boximgs } from "./images";
-
+import { springimgs } from "./images";
 
 const grid = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
 const size = 60;
@@ -39,7 +38,7 @@ const Square = ({ active, setActive, colIndex, rowIndex, x, y }) => {
       }}
       className="overflow-hidden"
     >
-        <Image src={boximgs[colIndex * 4 + rowIndex]} className="w-full h-auto pointer-events-none"></Image>
+        <Image src={springimgs[colIndex * 4 + rowIndex]} className="w-full h-auto pointer-events-none"></Image>
     </motion.div>
   );
 };

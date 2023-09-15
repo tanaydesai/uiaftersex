@@ -19,7 +19,7 @@ const Home = () => {
 
     return(
         <div className="content">
-            <div className='content-box'>
+            <div className='content-box flex items-center justify-center'>
                 {open && <Cmdkbox state={open}/>}
                 <h4 onClick={() => {setOpen(true)}} className='cursor-pointer' >Click me or <ImCommand className='inline' color='black' size={25}></ImCommand> + K</h4>
             </div>

@@ -58,7 +58,7 @@
         @apply m-3 p-10 max-w-[650px] mx-auto;
     }
     .content-box {
-        @apply max-w-[635px] h-[500px] bg-[#e8e1d9] shadow-[0_16px_70px_rgb(0_0_0_/_20%)] text-center flex justify-center items-center m-auto rounded-[15px];
+        @apply max-w-[635px] h-[500px] bg-[#e8e1d9] shadow-[0_16px_70px_rgb(0_0_0_/_20%)] text-center m-auto rounded-[15px];
     }
     .content-blog {
         @apply my-[50px] text-[#666666];

@@ -13,7 +13,7 @@ const Quickie = () => {
     return (
         <div className="w-full h-full flex justify-center items-center">
             <motion.div whileHover={open && {scale:1.3,transition:{duration:0.2}}} className="z-10">{!open ? <AiOutlineMenu onClick={() => setOpen(!open)} /> : <AiOutlineClose onClick={() => setOpen(!open)} />}</motion.div>
-            {open && <motion.div animate={{opacity:[0,0.8],transition:{duration:0.2}}} className="absolute m-0 bottom-0 w-screen h-full bg-[#f1f1f1]" />}
+            {open && <motion.div animate={{opacity:[0,0.8],transition:{duration:0.2}}} className="fixed m-0 bottom-0 w-screen h-full bg-[#f1f1f1]" />}
 
             {open && 
                 <motion.div animate={{y:-100,height:[50,50,100,150,180,150],transition:{type:"spring",stiffness:120,duration:0.4}}} className="z-10 flex gap-6 absolute mr-[110px]">
