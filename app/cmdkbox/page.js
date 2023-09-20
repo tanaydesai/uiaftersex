@@ -27,20 +27,21 @@ const Home = () => {
             <div className='content-blog'>
                 <h1 className="content-header">Cmdkbox</h1>
                 <div className="content-description">
-                    <p>Cmdkbox combines a<code><ImCommand className='inline' size={15}/></code> + <code>K</code> box & Arc's site search feature into a quick & easy way to broswe the web.</p>
+                    <p>This component combines a traditional<code><ImCommand className='inline' size={15}/> + K</code>box & quick-search enabling direct search inside various websties.</p>
+                    <p>Select any site from Twitter, Spotify, GitHub & Youtube and directly search for words, songs, repositories or videos.</p>
                 </div>
 
                 <h1 className='content-subheader'>Gist</h1>
                 <div className="content-description">
-                    <p>Site search aims to <span>directly search inside your favioutre apps & websties </span> without switching tabs & opening links. You can add any number of sites you wish to browse in.</p>
+                    <p>This component doubles as a Cmdkbox box & quick-search. Quick-search aims to <span>directly search inside websties </span> without the need to switch tabs or open links. You can add any number of sites you wish to browse in.</p>
                     <p>Plus there's always room for some <span> surprises:)</span></p>
                 </div>
 
                 <h1 className='content-subheader'>Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Cmdkbox' className="text-black link">here</a>. This was made with:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Cmdkbox' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><a href='https://cmdk.paco.me/' className="text-black link">cdmk box </a>by paco.</li>
-                    <li><code>React + Next.js</code> for implementation.</li>
+                    <li><code>Next.js</code> for quick-search.</li>
                     <p>Inspired by <a href='https://thebrowser.company/' className="text-black link"> thebrowsercompany</a>'s site search ❤️‍🩹</p>
                 </div>
             </div>

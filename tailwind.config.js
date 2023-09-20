@@ -27,7 +27,8 @@ module.exports = {
         dots: `url(/textures/dots.jpg)`,
         paper: `url(/textures/paper.jpg)`,
         dirt: `url(/textures/dirt.jpg)`,
-        grain: `url(/textures/grain.png)`
+        grain: `url(/textures/grain.png)`,
+        uiaftersex: `url(/textures/uiaftersex.png)`
       },
     },
   },

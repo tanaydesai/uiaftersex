@@ -113,6 +113,7 @@ export default function Cmdkbox() {
           <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/timemachine")}}><ProjectsIcon />Timemachine</Item>
           <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/cmdkbox")}}><ProjectsIcon />Cmdkbox</Item>
           <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/quickie")}}><ProjectsIcon />Quickie</Item>
+          <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/cursors")}}><ProjectsIcon />Cursors</Item>
           <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/springy")}}><ProjectsIcon />Springy</Item>  
           <Item shortcut="⇧ C" onSelect={() => {handleButtonClick("/card")}}><ProjectsIcon />Card</Item>        
         </Command.Group>

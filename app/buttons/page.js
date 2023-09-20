@@ -16,20 +16,20 @@ const Home = () => {
             <div className="content-blog">   
                 <h1 className="content-header">Buttons</h1>
                 <div className="content-description">
-                    <p>A collection of beautifully desgined buttons with fluid interactions and svg animations that can be used to begin/end doapamine-releasing web actions.</p>
+                    <p>A collection of beautifully desgined buttons with fluid micro-interactions and svg animations that can be used for the beginning or the end of a frequent web action.</p>
                 </div>
 
                 <h1 className='content-subheader'>Gist</h1>  
                 <div className="content-description">
-                    <p>Completing a transaction, signing up, adding to cart, etc. are tasks so mundane yet deeply personal to us. Actions so frequent, yet that mean so much to us. It is only fair they are acompained by beautifully crafted buttons to express the true feelings, invisible behind these interactions.</p>
+                    <p>Completing a transaction, signing up, adding to cart, viewing links, etc. are tasks so mundane yet deeply personal to us. Actions so frequent, yet that mean so much to us. It is only fair they are acompained by beautifully crafted micro-interactions to express their true feelings, invisible behind these interactions.</p>
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Buttons' className="text-black link">here</a>. This was made with:</p>
-                    <li><code >React + Next.js</code></li>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Buttons' className="text-black link">here</a>. Some libraries used are:</p>
+                    <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
-                    <li><code >Tailwind CSS</code></li>
+                    <li><code >tailwindcss</code></li>
                 </div> 
 
             </div>
