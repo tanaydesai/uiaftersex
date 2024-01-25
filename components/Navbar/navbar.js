@@ -9,7 +9,7 @@ import {AiFillGithub, AiOutlineTwitter} from "react-icons/ai"
 const NavBar = () => {
     const [hover, setHover] = useState(false)
     const router = useRouter()
-    const components = ["Peek","Timemachine","Cmdkbox","Card","quickie","springy","Cursors","Buttons"]
+    const components = ["Impulsive", "Timemachine","Cmdkbox","Card","quickie","springy","Cursors","Buttons"]
 
     const variants = {
         expanded:{

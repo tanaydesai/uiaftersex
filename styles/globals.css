@@ -59,3 +59,28 @@
   -webkit-font-smoothing: antialiased;
   src: local('Calming'), url("../assests/fonts/Calming.ttf") format('truetype');
 }
+
+
+@font-face {
+  font-family: 'Gucci';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Gucci'), url("../assests/fonts/Granjon.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Zara';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Gucci'), url("../assests/fonts/OPTIBodoni-Antiqua.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'ntw';
+  font-display: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Gucci'), url("../assests/fonts/SpaceMono-Regular.ttf") format('truetype');
+}

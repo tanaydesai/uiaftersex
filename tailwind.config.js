@@ -11,7 +11,10 @@ module.exports = {
       SupplyLRegular :["SupplyLRegular","Courier New"],
       SupplyUltra :["SupplyUltra","Courier New"],
       LufgaLight: ["LufgaLight","sans"],
-      Maglite: ["Maglite","sans"]
+      Maglite: ["Maglite","sans"],
+      Gucci: ["Gucci","sans"],
+      Zara: ["Zara","sans"],
+      NTW: ["ntw","sans"],
     },
     fontWeight: {
       thin: '100',
