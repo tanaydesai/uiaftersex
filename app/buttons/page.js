@@ -30,6 +30,8 @@ const Home = () => {
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>
+                    <li><code>react-epic-spinners</code></li>
+                    <li><code>react-icons</code></li>
                 </div> 
 
             </div>

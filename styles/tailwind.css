@@ -40,7 +40,7 @@
         @apply mt-[100px] mx-auto h-[1px] w-[50px] relative border-gray-400;
     }
     .navbar {
-        @apply [&::-webkit-scrollbar]:hidden py-1 px-2 cursor-pointer overflow-auto flex flex-wrap uppercase w-[300px] justify-between text-[12px] [font-family:'SupplyLRegular'] flex backdrop-blur-[135px] bg-[#F7F7F2]/[.60] fixed z-10 h-[40px] mx-auto inset-x-0 top-5 rounded-lg;
+        @apply [&::-webkit-scrollbar]:hidden py-1 px-2 cursor-pointer overflow-auto flex flex-wrap uppercase w-[300px] justify-between text-[12px] [font-family:'SupplyLRegular'] flex backdrop-blur-[135px] bg-[#F7F7F2]/[.60] fixed z-[100] h-[40px] mx-auto inset-x-0 top-5 rounded-lg;
     }
     .navbar-box {
         @apply px-2 py-1.5 rounded-lg h-fit hover:bg-[#121212]/[0.14] hover:opacity-60 duration-500;
