@@ -15,8 +15,8 @@ export const Implusive = () => {
         <div className="bg-red-100/[0.6] shadow-[0px_10px_38px_-10px_rgba(22,23,24,0.35),0px_10px_20px_-15px_rgba(22,23,24,0.2)] rounded-[22px] snap-y h-[318px] w-fit mx-auto p-3 overflow-auto [&::-webkit-scrollbar]:hidden">
             <motion.div  className="relative overflow-hidden bg-[#efd9cb] [&::-webkit-scrollbar]:hidden snap-center mt-3 h-[300px] w-[250px] rounded-[20px] p-3">
                     <div className="z-10 absolute top-3 w-fit left-3">
-                        <h1 className="z-10 text-3xl text-left w-fit text-[#e4ae8c] font-Gucci">BLOOM</h1>
-                        <h1 className="z-10 text-sm text-left w-fit text-[#e4ae8c] font-Gucci">GUCCI</h1>
+                        <h1 className="text-3xl text-left w-fit text-[#e4ae8c] font-Gucci">BLOOM</h1>
+                        <h1 className="text-sm text-left w-fit text-[#e4ae8c] font-Gucci">GUCCI</h1>
                     </div>
                     <Image src={gucci} className="-z-[0] absolute -right-0 top-0"/>
                     <Button price={200} color={"#cd9f82"} />
@@ -24,7 +24,7 @@ export const Implusive = () => {
 
             <motion.div  className="relative overflow-hidden bg-[#efd9cb] [&::-webkit-scrollbar]:hidden snap-center mt-3 h-[300px] w-[250px] rounded-[20px] p-3">
                     <div className="z-10 absolute top-3 w-fit left-3">
-                        <h1 className="z-10 text-3xl text-left w-fit text-[#676565] font-Zara">ZARA</h1>
+                        <h1 className="text-3xl text-left w-fit text-[#676565] font-Zara">ZARA</h1>
                     </div>
                     <Image src={zara} className="-z-[0] absolute -right-0  top-0"/>
                     <Button price={80} color={"#6291b2"} />
@@ -33,8 +33,8 @@ export const Implusive = () => {
 
             <motion.div  className="relative overflow-hidden bg-[#efd9cb] [&::-webkit-scrollbar]:hidden snap-center mt-3 h-[300px] w-[250px] rounded-[20px] p-3">
                     <div className="z-10 absolute top-3 w-fit left-3">
-                        <h1 className="z-10 text-3xl text-left w-fit text-[#cf9977] font-NTW">Mokka</h1>
-                        <h1 className="z-10 text-sm text-left w-fit text-[#cf9977] font-NTW">notwoways</h1>
+                        <h1 className="text-3xl text-left w-fit text-[#cf9977] font-NTW">Mokka</h1>
+                        <h1 className="text-sm text-left w-fit text-[#cf9977] font-NTW">notwoways</h1>
                     </div>
                     <Image src={mokka2} className="-z-[0] absolute -right-0  top-0"/>
                     <Button price={100} color={"#cd9f82"} />
@@ -42,8 +42,8 @@ export const Implusive = () => {
 
             <motion.div  className="relative overflow-hidden bg-[#efd9cb] [&::-webkit-scrollbar]:hidden snap-center mt-3 h-[300px] w-[250px] rounded-[20px] p-3">
                     <div className="z-10 absolute top-3 w-fit left-3">
-                        <h1 className="z-10 text-3xl text-left w-fit text-[#ffffff] font-NTW">floe</h1>
-                        <h1 className="z-10 text-sm text-left w-fit text-[#ffffff] font-NTW">notwoways</h1>
+                        <h1 className="text-3xl text-left w-fit text-[#ffffff] font-NTW">floe</h1>
+                        <h1 className="text-sm text-left w-fit text-[#ffffff] font-NTW">notwoways</h1>
                     </div>
                     <Image src={flow} className="-z-[0] absolute -right-0   top-0"/>
                     <Button price={100} color={"#7ab1be"} />

@@ -7,11 +7,17 @@ const Home = () => {
         <div className="content">
             <div className="content-box bg-transparent pt-[80px] shadow-none"><Implusive /></div>
 
-            {/* <div className="content-blog">
+            <div className="content-blog">
                 <h1 className="content-header">Impulsive</h1>
                 <div className="content-description">
-                    <p>A boucy, fluid, speedy & hoverable component for displaying links or socials.</p>
-                    <p>Try hovering over the links:)</p>
+                    <p>In a world which is ever so hungry for dopamine, this interface aims to exploit one of the most impulsive human traits - shopping. In the form of a fluid concept that tiktok-ifys the shopping experience, miles away from whatever the hell Amazon UI has been for decades.</p>
+                    <p>Also accompanied by some old freinds from <a href="https://uiaftersex.vercel.app/buttons" className="text-black link">Buttons</a>.</p>
+                </div>
+
+                <h1 className="content-subheader">Gist</h1>
+                <div className="content-description">
+                    <p>Impulsive is meant to be a <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurendelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept brought-to-life for personaly satisfaction. This component tries to demonstrate a more personalized, quality-driven, addictive, seamless, and carefully curated shopping flow.</p>
+                    <p>Conveyed by some of my guilty wishlist items:)</p>
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
@@ -20,9 +26,10 @@ const Home = () => {
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>
-                    <p>inspired by the legendary designer <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">@saintlaurendelrey</a>'s "ship to friends" concept.</p>
+                    <li><code>react-epic-spinners</code></li>
+                    <p>Inspired by the legendary designer <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurendelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept.</p>
                 </div>   
-            </div>  */}
+            </div> 
         </div>
     )
 }
