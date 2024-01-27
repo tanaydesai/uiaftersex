@@ -5,8 +5,7 @@ const Home = () => {
 
     return(
         <div className="content">
-            <div className="content-box pt-[80px] "><Implusive /></div>
-            {/* bg-transparent pt-[80px] shadow-none */}
+            <div className="content-box bg-transparent pt-[80px] shadow-none"><Implusive /></div>
 
             <div className="content-blog">
                 <h1 className="content-header">Impulsive</h1>
