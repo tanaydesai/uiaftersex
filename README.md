@@ -10,13 +10,19 @@ Happy coding!
 
 ## Components 
 
-You can see the code for all components in the [`/components`](https://github.com/tanaydesai/uiaftersex/tree/main/components) folder.
+Install the primary libraries used:
 
-- `Buttons`: A collection of beautifully desgined buttons with fluid micro-interactions & svg animations.
-- `Card`: Hoverable 3D theme-specific cards for showcasing any content in a beautiful way.
-- `Cmdkbox`: This component combines a traditional ⌘+K box & quick-search enabling direct search inside various websties.
-- `Cursors`: A collection of customisable, theme & area specific cursors.
+```bash
+npm i framer-motion tailwindcss
+```
+
+Each component is a single file of code. Made for copy and paste! You can see the code for all components in the [`/components`](https://github.com/tanaydesai/uiaftersex/tree/main/components) folder.
+
+- `Buttons`: A collection of beautifully designed buttons with fluid micro-interactions & svg animations.
+- `Card`: Hoverable 3D theme-specific cards for beautifully showcasing any content.
+- `Cmdkbox`: This component combines a traditional ⌘+K box & quick-search enabling direct search inside various websites.
+- `Cursors`: A collection of customisable, theme & area-specific cursors.
 - `Peek`: A simple, accessible & effortless way to peek inside links.
-- `Quickie`: A boucy, fluid, speedy & hoverable component for displaying links or socials.
-- `Springy`: A sprigy & non-boring way to display images on a webstie.
+- `Quickie`: A bouncy, fluid, speedy & hoverable component for displaying links or socials.
+- `Springy`: A springy & non-boring way to display images on a website.
 - `Timemachine`: Concept that brings fluid animations & intuitive interactivity to your old & boring search histories.
