@@ -18,6 +18,7 @@ npm i framer-motion tailwindcss
 
 Each component is a single file of code. Made for copy and paste! You can see the code for all components in the [`/components`](https://github.com/tanaydesai/uiaftersex/tree/main/components) folder.
 
+- `Impulsive`: Designer Saint laurent del rey's concept brought to life. A quality-driven and carefully curated shopping flow.
 - `Buttons`: A collection of beautifully designed buttons with fluid micro-interactions & svg animations.
 - `Card`: Hoverable 3D theme-specific cards for beautifully showcasing any content.
 - `Cmdkbox`: This component combines a traditional ⌘+K box & quick-search enabling direct search inside various websites.
