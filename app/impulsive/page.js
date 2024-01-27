@@ -5,7 +5,8 @@ const Home = () => {
 
     return(
         <div className="content">
-            <div className="content-box bg-transparent pt-[80px] shadow-none"><Implusive /></div>
+            <div className="content-box pt-[80px] "><Implusive /></div>
+            {/* bg-transparent pt-[80px] shadow-none */}
 
             <div className="content-blog">
                 <h1 className="content-header">Impulsive</h1>
@@ -16,18 +17,18 @@ const Home = () => {
 
                 <h1 className="content-subheader">Gist</h1>
                 <div className="content-description">
-                    <p>Impulsive is meant to be a <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurendelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept brought-to-life for personaly satisfaction. This component tries to demonstrate a more personalized, quality-driven, addictive, seamless, and carefully curated shopping flow.</p>
+                    <p>Impulsive is meant to be a <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurentdelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept brought-to-life for personaly satisfaction. This component tries to demonstrate a more personalized, quality-driven, addictive, seamless, and carefully curated shopping flow.</p>
                     <p>Conveyed by some of my guilty wishlist items:)</p>
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Quickie/quickie.js' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Impulsive/impulsive.js' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>
-                    <li><code>react-epic-spinners</code></li>
-                    <p>Inspired by the legendary designer <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurendelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept.</p>
+                    <li><code >react-epic-spinners</code></li>
+                    <p>Inspired by the legendary designer <a href="https://twitter.com/laurentdelrey/" className="text-black link">@laurentdelrey</a>'s <a href="https://twitter.com/laurentdelrey/status/1712467248768749789" className="text-black link">"ship to friends"</a> concept.</p>
                 </div>   
             </div> 
         </div>

@@ -8,6 +8,7 @@ import cmdk from "@/assests/images/cdmkboxdemo.png"
 import card from "@/assests/images/carddemo.png"
 import quickie from "@/assests/images/quickiedemo.png"
 import sggallery from "@/assests/images/sgdemo.png"
+import impulsive from "@/assests/images/impulsivedemo.png"
 import buttons from "@/assests/images/buttonsdemo.png"
 import cursor from "@/assests/images/cursordemo.png"
 import uiaftersex from "@/assests/svgs/uiaftersex-white.svg"
@@ -18,6 +19,7 @@ import { ParallaxProvider, useParallax, Parallax } from 'react-scroll-parallax';
 import {AiFillGithub} from "react-icons/ai"
 
 const boxes = [
+  {Name:"Impulsive",Link:"/impulsive",Image:impulsive,Date:"25.01.24",Description:"Designer Saint laurent del rey's concept brought to life. A quality-driven and carefully curated shopping flow."}, 
   {Name:"Peek",Link:"/peek",Image:peek,Date:"23.05.23",Description:"A simple, accessible & effortless way to peek inside links."}, 
   {Name:"Timemachine",Link:"/timemachine",Image:time,Date:"20.07.23",Description:"Concept that brings fluid animations & intuitive interactivity to your old & boring search histories."},
   {Name:"Quickie",Link:"/quickie",Image:quickie,Date:"10.08.23",Description:"A boucy, fluid, speedy & hoverable component for displaying links or socials."}, 
