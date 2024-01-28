@@ -1,15 +1,16 @@
 "use client"
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
-import TimeMachine from '@/components/Timemachine/timemachine';
+import TimeMachine from '@/components/lab/Timemachine/timemachine';
 import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
+import {Codeblock, Codeline} from "@/components/app/Block/block"
 
 const Home = () => {
     const [open, setOpen] = useState(false);
 
     return (
         <div className='content'>
-            <div className='content-box'><TimeMachine /></div>
+            <div className='content-box  static'><TimeMachine /></div>
             
             <div className="content-blog">
                 <h1 className="content-header">TimeMachine</h1>
@@ -26,11 +27,15 @@ const Home = () => {
                 </div>
 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion lodash-move react-icons"/>
+                <Codeblock component="timemachine"/>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Timemachine/timemachine.js' className='link text-black'>here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Timemachine' className='link text-black'>here</a>. Some libraries used are:</p>
                     <li><code>Next.js</code></li>
                     <li><code>framer-motion</code></li>
                     <li><code >tailwindcss</code></li>
+                    <li><code >react-icons</code></li>
+                    <li><code >lodash-move</code></li>
                     <li><code>Electron.js</code> (for webview)</li>
                     <p>Inspired by the original Apple MacOs Time-machine:)</p>
                 </div>      

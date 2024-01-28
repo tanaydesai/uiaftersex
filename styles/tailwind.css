@@ -21,7 +21,7 @@
         @apply min-w-[200px] max-w-[430px];
     }
     .blob {
-        @apply min-h-[250px] max-h-[350px] bg-[#e8e1d9] rounded-[20px] pb-[100%];
+        @apply min-h-[250px] max-h-[350px] bg-[#e8e1d9] rounded-[20px] pb-[100%] overflow-hidden;
         /* bg-[#e6e6e6] */
     }
     .blob-image {
@@ -58,7 +58,14 @@
         @apply m-3 p-10 max-w-[650px] mx-auto;
     }
     .content-box {
-        @apply max-w-[635px] h-[500px] bg-[#e8e1d9] shadow-[0_16px_70px_rgb(0_0_0_/_20%)] text-center m-auto rounded-[15px];
+        @apply relative z-[1] max-w-[635px] h-[500px] bg-[#e8e1d9] shadow-[0_16px_70px_rgb(0_0_0_/_20%)] text-center m-auto rounded-[15px];
+    }
+    .content-box-decoration2 {
+        @apply absolute inset-0 -z-[1] h-full w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px];
+    }
+    .content-box-decoration {
+        /* e5e7eb */
+        @apply absolute inset-0 -z-[1] h-full w-full  bg-[radial-gradient(#ffffff,transparent_1px)] [background-size:16px_16px];
     }
     .content-blog {
         @apply my-[50px] text-[#666666];

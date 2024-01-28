@@ -1,5 +1,6 @@
 "use client"
-import Implusive from "@/components/Impulsive/impulsive";
+import Implusive from "@/components/lab/Impulsive/impulsive";
+import {Codeblock, Codeline} from "@/components/app/Block/block"
 
 const Home = () => {
 
@@ -21,8 +22,10 @@ const Home = () => {
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion react-epic-spinners"/>
+                <Codeblock component="impulsive" />
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Impulsive/impulsive.js' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Impulsive' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>

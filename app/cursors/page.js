@@ -1,11 +1,12 @@
 "use client"
-import Cursors from "@/components/Cursors/cursors"
+import Cursors from "@/components/lab/Cursors/cursors"
+import {Codeblock, Codeline} from "@/components/app/Block/block"
 
 const Home = () => {
 
     return(
         <div className="content">
-           <div className="content-box bg-transparent shadow-none overflow-auto"><Cursors /></div>
+           <div className="content-box bg-transparent shadow-none overflow-auto static"><Cursors /></div>
 
 
            <div className="content-blog">
@@ -15,8 +16,10 @@ const Home = () => {
                 </div>
 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion"/>
+                <Codeblock component="cursors"/>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Cursors' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Cursors' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>
