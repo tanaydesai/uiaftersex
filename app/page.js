@@ -45,6 +45,7 @@ export function Home() {
 
   return (
       <div className='p-5 md:p-10 overflow-x-hidden'>
+      <div className="content-box-decoration fixed bg-[radial-gradient(#cacccf,transparent_1px)]"/>                
 
         <div className='intro top-10' ref={mage.ref}>
             <Image src={rose} className='absolute m-auto -rotate-45' width={700} height={600}></Image>

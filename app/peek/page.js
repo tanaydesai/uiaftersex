@@ -1,15 +1,17 @@
 "use client"
-import Peek from "@/components/Peek/peek"
+import Peek from "@/components/lab/Peek/peek"
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
 import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
+import {Codeblock, Codeline} from "@/components/app/Block/block"
+
 
 const Home = () => {
     const [open, setOpen] = useState(false);
 
     return(
         <div className="content">
-            <div className="content-box"><Peek /></div>
+            <div className="content-box"><Peek /><div className="content-box-decoration"/></div>
 
             <div className="content-blog">   
                 <h1 className="content-header">Peek</h1>
@@ -26,8 +28,10 @@ const Home = () => {
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion"/>
+                <Codeblock component="peek" />
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Peek/peek.js' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Peek' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>

@@ -1,6 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react';
-import CardExploreAI from '@/components/Card/card';
+import CardExploreAI from '@/components/lab/Card/card';
+import {Codeblock, Codeline} from "@/components/app/Block/block"
+
 
 const Home = () => {
     return (
@@ -20,8 +22,10 @@ const Home = () => {
                 </div>
 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion"/>
+                <Codeblock component="card" />
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Card' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Card' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>

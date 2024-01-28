@@ -1,7 +1,9 @@
 "use client"
-import Button1 from "@/components/Buttons/button1"
-import Button2 from "@/components/Buttons/button2"
-import Button3 from "@/components/Buttons/button3"
+import Button1 from "@/components/lab/Buttons/button1"
+import Button2 from "@/components/lab/Buttons/button2"
+import Button3 from "@/components/lab/Buttons/button3"
+import {Codeblock, Codeline} from "@/components/app/Block/block"
+
 
 const Home = () => {
 
@@ -11,6 +13,7 @@ const Home = () => {
                 <Button1 />
                 <Button2 />
                 <Button3 />
+                <div className="content-box-decoration"/>                
             </div>
 
             <div className="content-blog">   
@@ -25,8 +28,12 @@ const Home = () => {
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion react-epic-spinners react-icons"/>
+                <Codeblock component="button1" />
+                <Codeblock component="button2" />
+                <Codeblock component="button3" />
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Buttons' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Buttons' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code >tailwindcss</code></li>

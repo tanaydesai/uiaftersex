@@ -1,11 +1,13 @@
 "use client"
-import Spring from "@/components/Springy/spring"
+import Spring from "@/components/lab/Springy/spring"
+import {Codeblock, Codeline} from "@/components/app/Block/block"
+
 
 const Home = () => {
 
     return(
         <div className="content">
-            <div className="content-box flex justify-center items-center"><Spring /></div>
+            <div className="content-box flex justify-center items-center"><Spring /><div className="content-box-decoration"/></div>
 
             <div className="content-blog">
                 <h1 className="content-header">Springy</h1>
@@ -20,8 +22,10 @@ const Home = () => {
                 </div>
                 
                 <h1 className="content-subheader">Code</h1>
+                <Codeline code="npm i framer-motion @popmotion/popcorn"/>
+                <Codeblock component="springy"/>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/blob/main/components/Springy/spring.js' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/spring.js' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><code >Next.js</code></li>
                     <li><code >framer-motion</code></li>
                     <li><code>@popmotion/popcorn</code> (for distance)</li>

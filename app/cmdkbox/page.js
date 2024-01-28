@@ -1,5 +1,5 @@
 "use client"
-import Cmdkbox from '@/components/Cmdkbox/command';
+import Cmdkbox from '@/components/lab/Cmdkbox/command';
 import { useState, useEffect } from 'react';
 import {ImCommand} from 'react-icons/im';
 
@@ -20,6 +20,7 @@ const Home = () => {
     return(
         <div className="content">
             <div className='content-box flex items-center justify-center'>
+                <div className="content-box-decoration"/>
                 {open && <Cmdkbox state={open}/>}
                 <h4 onClick={() => {setOpen(true)}} className='cursor-pointer' >Click me or <ImCommand className='inline' color='black' size={25}></ImCommand> + K</h4>
             </div>
@@ -39,7 +40,7 @@ const Home = () => {
 
                 <h1 className='content-subheader'>Code</h1>
                 <div className="content-description">
-                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/Cmdkbox' className="text-black link">here</a>. Some libraries used are:</p>
+                    <p>The code for this component is <a href='https://github.com/tanaydesai/uiaftersex/tree/main/components/lab/Cmdkbox' className="text-black link">here</a>. Some libraries used are:</p>
                     <li><a href='https://cmdk.paco.me/' className="text-black link">cdmk box </a>by paco.</li>
                     <li><code>Next.js</code> for quick-search.</li>
                     <p>Inspired by <a href='https://thebrowser.company/' className="text-black link"> thebrowsercompany</a>'s site search ❤️‍🩹</p>

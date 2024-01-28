@@ -16,7 +16,7 @@
   border-radius: 15px;
   width: 260px;
   height: 400px;
-  background: url("../../public/textures/paper.jpg");
+  background: url("../../../public/textures/paper.jpg");
   -webkit-transform: rotateY( 180deg );
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
