@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Toast />
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
         <hr className='divder'></hr>
         <Footer />
