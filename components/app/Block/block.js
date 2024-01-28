@@ -19,7 +19,7 @@ export const Codeblock = ({component}) => {
     return (
       <>
         {code && <div className="my-5 relative">
-          {path && <div className="w-full rounded-t-[6px] bg-gray-300 py-2"><code className="text-gray-700 bg-transparent font-SupplyLRegular">{path}</code></div>}
+          {path && <div className="w-full rounded-t-[6px] bg-gray-300 py-2 overflow-hidden truncate"><code className="text-gray-700 overflow-hidden bg-transparent font-SupplyLRegular">{path}</code></div>}
           <CodeBlock code={code} language="js">
             <CodeBlock.Code style={{minHeight:"50px",height: open ? "fit-content" : "300px"}} className={`[&::-webkit-scrollbar]:hidden  bg-[rgb(220,220,220)] ${path ? "rounded-t-[0px]" : ""} text-red-400 font-SupplyLRegular text-sm p-4 ${open ? "" : "[mask:linear-gradient(to_bottom,rgba(0,0,0,1)_0,rgba(0,0,0,1)_10%,rgba(0,0,0,0)_95%,rgba(0,0,0,0)_0)_0%_0%_/_100%_120%_repeat-x]"} rounded-lg overflow-auto shadow`}>
               <CodeBlock.LineContent>
